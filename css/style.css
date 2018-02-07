@@ -631,9 +631,8 @@ footer a:hover {
 }
 
 #mytop:hover {
-    background-color: #F5F2EC;
+    background-color: rgba(255, 255, 255, 0.1);
 }
-
 
 .mentions {
 
