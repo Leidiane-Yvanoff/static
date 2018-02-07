@@ -1,0 +1,698 @@
+/*!
+Theme Name: fxmarquis
+Theme URI: http://underscores.me/
+Author: Ly design
+Author URI: http://Ly Design/
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: fxmarquis
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+fxmarquis is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*
+.container {
+    max-width: 1920px;
+    height: auto;
+    margin: 0;
+
+}
+*/
+
+.social {
+
+    display: block;
+    justify-content: space-between;
+    flex-flow: nowrap;
+    margin: auto;
+}
+
+nav {
+    background: #008D9E;
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+nav li {
+    display: block;
+    justify-content: center;
+
+    margin: 0 auto;
+
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    display: block;
+    justify-content: center;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    transition: .5s;
+    margin: 0 auto;
+}
+
+nav li a:hover {
+    background: #036874;
+    text-decoration: none;
+    color: white;
+}
+
+.hero {
+
+    background-image: url(../img/nomade.jpg);
+    background-repeat: no-repeat;
+    background-position: left 12% center;
+    background-size: cover;
+    max-width: 100%;
+    margin: auto;
+}
+
+.hero2 {
+
+    background-image: url(../img/livre.jpg);
+    background-repeat: no-repeat;
+    background-position: left 12% center;
+    background-size: cover;
+    max-width: 100%;
+    margin: auto;
+}
+
+.hero2 .row {
+    height: calc(100vh - 36px);
+}
+
+.hero3 {
+
+    background-image: url(../img/montagne2.jpg);
+    background-repeat: no-repeat;
+    background-position: left 12% center;
+    background-size: cover;
+    max-width: 100%;
+    margin: auto;
+}
+
+.hero3 .row {
+    height: calc(100vh - 36px);
+}
+
+
+.hero .row {
+    height: calc(100vh - 36px);
+}
+
+@media (min-width: 769px) {
+    .hero .row {
+        height: calc(100vh - 60px);
+    }
+
+}
+
+@media (min-width: 769px) {
+    .hero2 .row {
+        height: calc(100vh - 60px);
+    }
+
+}
+
+@media (min-width: 769px) {
+    .hero3 .row {
+        height: calc(100vh - 60px);
+    }
+
+}
+
+.hero .container {
+    display: block;
+    text-align: center;
+    justify-content: center center;
+    padding-top: color: #fff;
+    text-decoration: none;
+
+
+}
+
+.hero .container a:hover {
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    background: #036874;
+}
+
+.menuicon {
+    transition: .3s;
+
+}
+
+.menuicon:hover {
+
+    text-decoration: none;
+    opacity: 0.5;
+
+}
+
+
+h1 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10vh;
+    text-align: center;
+    text-shadow: 1px 1px 2px #454242;
+    font-weight: 400;
+}
+
+h2 {
+
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3vh;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(69, 66, 66, 0.1);
+    padding-bottom: 20px;
+    padding-top: 8Opx;
+    font-weight: 400;
+}
+
+.grand {
+    font-size: 6vh;
+    color: white;
+    text-shadow: none;
+}
+
+.voir {
+
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #008D9E;
+    color: #fff;
+    font-size: 18px;
+    border: solid 2px #008D9E;
+    border-radius: 120px;
+    box-shadow: 2px 2px 2px grey;
+    transition: .3s;
+
+}
+
+.voir:hover {
+    transform: scale(1.2);
+    color: #008D9E;
+    background-color: white;
+
+}
+
+h3 {
+    text-transform: uppercase;
+    font-size: 5vh;
+    color: black;
+    margin-top: 90px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 400;
+
+}
+
+.img-responsive {
+
+    width: 100%;
+    height: auto;
+    margin: 0;
+
+
+}
+
+.ecole {
+    padding-top: 40px;
+}
+
+p {
+
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+p #first {
+    font-size: 3em;
+    line-height: 1;
+}
+
+.btn {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 25px;
+    background-color: #008D9E;
+    color: white;
+    font-size: 18px;
+    border: solid 2px #008D9E;
+    border-radius: 120px;
+    box-shadow: 1px 1px 2px grey;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    transition: .3s;
+}
+
+.btn a {
+    color: white;
+    transition: .3s;
+}
+
+.btn a:hover {
+    text-decoration: none;
+    color: white;
+    transform: scale(1.2);
+}
+
+h4 {
+
+    text-align: center;
+    color: #707070;
+    margin-bottom: 40px;
+    margin-top: 4Opx;
+    padding-top: 40px;
+
+}
+
+.vert {
+    color: #008D9E;
+    font-size: 1.3em;
+}
+
+.main-about {
+    width: 100%;
+    background-color: #F5F2EC;
+    background-position: center;
+    background-size: contain;
+    height: auto;
+    margin: auto;
+
+}
+
+.green {
+    background-color: #008D9E;
+    height: auto;
+    width: 100%;
+    margin: auto;
+    padding-top: 20px;
+    display: inline-block;
+    align-items: center;
+}
+
+.conseil {
+    display: block;
+    padding-top: 40px;
+    margin: auto;
+}
+
+.accompagnement {
+    display: block;
+    padding-top: 40px;
+    margin: auto;
+}
+
+.agenda {
+
+    background-color: #F5F2EC;
+    background-position: center;
+    background-size: contain;
+    height: auto;
+    margin: auto;
+}
+
+.calendrier {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 20px;
+
+}
+
+.slider {
+    background-image: url(../img/montagne.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+
+}
+
+.fx img {
+    margin: 0 auto;
+
+}
+
+.fx-text {
+    padding-top: 80px;
+}
+
+.livre {
+
+    max-width: 840px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.livret {
+
+    object-position: right;
+    position: absolute;
+    margin: 0 auto;
+    top: 30%;
+    padding-left: 40vw;
+    padding-right: 2vw;
+    z-index: 88;
+
+
+}
+
+.logoediteur {
+
+    margin: auto;
+    margin-top: 30px;
+
+}
+
+.font-weight-bold,
+.slogan {
+    text-align: center;
+    margin: auto;
+}
+
+
+.contact {
+    background-color: #008D9E;
+    height: auto;
+
+}
+
+.nom {
+    background-color: white;
+    width: 2OOpx;
+    height: 18px;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.mel {
+    background-color: white;
+    width: 2OOpx;
+    height: 18px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+}
+
+.message {
+    background-color: white;
+    width: 2OOpx;
+    height: 18px;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    padding-bottom: 300px;
+    padding-left: 20px;
+}
+
+
+footer a {
+    color: white;
+
+
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.foot {
+    padding-bottom: 40px;
+    line-height: 2;
+
+}
+
+.btn-primary {
+    background-color: white;
+    border: none;
+    transition: .3s;
+    color: #008D9E;
+}
+
+.btn-primary:hover {
+    transform: scale(1.2);
+    color: #008D9E;
+    background-color: white;
+    color: #008D9E;
+
+}
+
+.formulaire {
+    margin: 10px 0px;
+    padding: 40px 20px;
+    background-color: #008D9E;
+
+}
+
+.embed-responsive {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/*liste blog */
+
+.avatar {
+
+    margin: 40px auto;
+    flex-direction: row;
+    text-align: center;
+
+}
+
+
+.btn-white {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+    background-color: white;
+    color: #008D9E;
+    font-size: 18px;
+    border: solid 2px #008D9E;
+    border-radius: 120px;
+    margin: 10px auto;
+    transition: .3s;
+    max-width: 150px;
+}
+
+.btn-white a {
+    color: #008D9E;
+    transition: .3s;
+    padding: 4px;
+}
+
+.btn-white:hover {
+    text-decoration: none;
+    color: #008D9E;
+    transform: scale(1.2);
+}
+
+.date {
+    font-size: 0.7rem;
+    text-align: right;
+    color: #008D9E;
+    padding-top: 0;
+    padding-right: 3%;
+}
+
+.avatar-vert {
+    font-size: 1.2rem;
+    color: #008D9E;
+    position: relative;
+    transition: .3s;
+
+}
+
+.avatar-vert a {
+    text-decoration: none;
+}
+
+.avatar-vert::after {
+
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background-color: #008D9E;
+    transform-origin: top center;
+    transform: scaleX(0);
+    transition: transform .3s;
+
+}
+
+.avatar-vert:hover::after {
+
+    transform: scaleX(1);
+    text-decoration: none;
+    color: #008D9E;
+}
+
+.partager {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 160px;
+    padding-top: 60px;
+}
+
+.h5 {
+    padding-top: 40px;
+    color: #C2925A;
+    font-size: 1.9rem;
+    font-weight: 200;
+}
+
+.text1 {
+    margin: 20px;
+}
+
+#mytop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+
+    color: #054b53;
+    cursor: pointer;
+    padding: 0;
+    border-radius: 80px;
+}
+
+#mytop:hover {
+    background-color: #F5F2EC;
+}
+
+
+.mentions {
+
+    padding: 20px;
+}
+
+.nav-link {
+    display: flex;
+    transition: .3s;
+}
+
+.nav-link a:hover {
+    background-color: #054b53;
+    border-radius: 40px;
+    transform: scale(1.3);
+}
+
+
+.ligne {
+    position: relative;
+    animation-duration: 1s;
+    animation-name: slidein;
+    animation-iteration-count: 1;
+}
+
+@keyframes slidein {
+    from {
+        margin-right: 0%;
+        width: 20%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 20%;
+    }
+    
+}
+.ligne2
+{
+        position: relative;
+    animation-duration: 1s;
+    animation-name: slidein;
+    animation-iteration-count: 1;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 0%;
+        width: 20%;
+    }
+
+    to {
+        margin-right: 0%;
+        width: 20%;
+    }
+    
+}
+#Blog 
+
+
+
+/*smart slider*/
