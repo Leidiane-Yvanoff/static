@@ -34,11 +34,11 @@
                             </ul>
 
                             <div class="nav-link navbar-right justify-content-around">
-                               
-                                   <div><a href="https://medium.com/@fxmarquis" width="30" class="navbar-toggler-icon"><img src="img/medium.svg" alt=""></a></div>
-                                 <div><a href="https://www.linkedin.com/in/fxmarquis/" class="navbar-toggler-icon"><img src="img/linked.svg" alt=""></a></div>
-                                  <div> <a href="https://twitter.com/fx_marquis?lang=fr" class="navbar-toggler-icon"><img src="img/Twitter_1_.svg" alt=""></a></div>
-                                
+
+                                <div><a href="https://medium.com/@fxmarquis" width="30" class="navbar-toggler-icon"><img src="img/medium.svg" alt=""></a></div>
+                                <div><a href="https://www.linkedin.com/in/fxmarquis/" class="navbar-toggler-icon"><img src="img/linked.svg" alt=""></a></div>
+                                <div> <a href="https://twitter.com/fx_marquis?lang=fr" class="navbar-toggler-icon"><img src="img/Twitter_1_.svg" alt=""></a></div>
+
                             </div>
                         </div>
                     </div>
@@ -100,24 +100,18 @@
     </section>
 
 
-    <section class="formulaire">
+    <section class="contact">
 
         <div class="formulaire">
 
             <form>
 
-                <div class="row">
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Prénom">
-                    </div>
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Nom">
-                    </div>
-                </div>
+
+                <input type="text" class="form-control" placeholder="Nom-Prénom">
 
                 <div class="form-group">
                     <label for="exampleInputEmail1"></label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Entrer e-mail">
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="E-mail">
                 </div>
                 <div>
                     <div class="form-group">
@@ -134,47 +128,47 @@
                 <button type="submit" class="btn btn-primary">Envoyer</button>
             </form>
         </div>
-         </section>
-        <footer class="foot">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <a href="mentions.html" class="text-white">  Mentions légales </a><br>
-                        <a href="#" class="text-white">  fxmarquis@wanadoo.fr </a>
-                    </div>
-                </div>
-            </div>
+    </section>
+    <footer class="foot">
+        <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
-                    <a class="text-white"><a href="#about">À propos </a><a href="#prestations">Prestations </a><a href="#livre">Livre</a> <a href="#video"> Vidéo </a> <a href="#Contact">Contact</a> </a>
+                    <a href="mentions.html" class="text-white">  Mentions légales </a><br>
+                    <a href="#" class="text-white">  fxmarquis@wanadoo.fr </a>
                 </div>
             </div>
-        </footer>
-   
-        <script type="application/javascript" src="js/jquery-3.2.1.min.js"></script>
-        <script type="application/javascript" src="js/bootstrap.min.js"></script>
-        <script type="application/javascript" src="js/bootstrap.js"></script>
-        <script type="application/javascript" src="js/npm.js"></script>
-        <script>
-            window.onscroll = function() {
-                scrollFunction()
-            };
+        </div>
+        <div class="row">
+            <div class="col-12 text-center">
+                <a class="text-white"><a href="#about">À propos </a><a href="#prestations">Prestations </a><a href="#livre">Livre</a> <a href="#video"> Vidéo </a> <a href="#Contact">Contact</a> </a>
+            </div>
+        </div>
+    </footer>
 
-            function scrollFunction() {
-                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                    document.getElementById("mytop").style.display = "block";
-                } else {
-                    document.getElementById("mytop").style.display = "none";
-                }
+    <script type="application/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="application/javascript" src="js/bootstrap.min.js"></script>
+    <script type="application/javascript" src="js/bootstrap.js"></script>
+    <script type="application/javascript" src="js/npm.js"></script>
+    <script>
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("mytop").style.display = "block";
+            } else {
+                document.getElementById("mytop").style.display = "none";
             }
+        }
 
-            // When the user clicks on the button, scroll to the top of the document
-            function topFunction() {
-                document.body.scrollTop = 0;
-                document.documentElement.scrollTop = 0;
-            }
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
 
-        </script>
+    </script>
 </body>
 
 </html>

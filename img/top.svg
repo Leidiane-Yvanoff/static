@@ -1,25 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-10781 -17438 46 46">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-11142 -17437.996 46 46">
   <defs>
     <style>
-      .cls-1, .cls-3 {
-        fill: none;
+      .cls-1 {
+        fill: #fff;
       }
 
-      .cls-1 {
+      .cls-1, .cls-2 {
         stroke: #008d9e;
         stroke-width: 2px;
       }
 
-      .cls-2 {
+      .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-3 {
         stroke: none;
       }
     </style>
   </defs>
-  <g id="Round_arrow" data-name="Round arrow" transform="translate(-10938 -19145)">
+  <g id="Round_arrow_active" data-name="Round arrow active" transform="translate(-12849 -17234.996) rotate(-90)">
     <g id="Ellipse_501" data-name="Ellipse 501" class="cls-1" transform="translate(157 1707)">
-      <circle class="cls-2" cx="23" cy="23" r="23"/>
-      <circle class="cls-3" cx="23" cy="23" r="22"/>
+      <circle class="cls-3" cx="23" cy="23" r="23"/>
+      <circle class="cls-4" cx="23" cy="23" r="22"/>
     </g>
-    <path id="Tracé_5186" data-name="Tracé 5186" class="cls-1" d="M-13837-4831.7l4.35,4.35-4.35,4.35" transform="translate(3784.376 -12473.261) rotate(-95)"/>
+    <path id="Tracé_5186" data-name="Tracé 5186" class="cls-2" d="M-13837-4831.7l4.35,4.35-4.35,4.35" transform="translate(14016 6557)"/>
   </g>
 </svg>
