@@ -28,7 +28,7 @@
                 </div>
 
                 <div class="collapse navbar-collapse" id="menu">
-                    <ul class="nav navbar-nav col-md-10">
+                    <ul class="nav navbar-nav">
                         <li><a href="#about">à propos</a></li>
                         <li><a href="#prestations">prestations</a></li>
                         <li><a href="#livre">livre</a></li>
@@ -36,10 +36,10 @@
                         <li><a href="#contact">contact</a></li>
                     </ul>
 
-                    <div class="nav-link navbar-right col-md-2">
+                    <div class="nav-link navbar">
 
-                        <div><a href="https://medium.com/@fxmarquis" width="30" class="navbar-toggler-icon"><img src="img/medium.svg" alt=""></a></div>
-                        <div><a href="https://www.linkedin.com/in/fxmarquis/" class="navbar-toggler-icon"><img src="img/linked.svg" alt=""></a></div>
+                        <div><a href="https://medium.com/@fxmarquis" width="30" class="navbar-toggler-icon"><img src="img/medium.svg" alt=""></a></div>&nbsp;&nbsp;&nbsp;
+                        <div><a href="https://www.linkedin.com/in/fxmarquis/" class="navbar-toggler-icon"><img src="img/linked.svg" alt=""></a></div>&nbsp;&nbsp;&nbsp;
                         <div> <a href="https://twitter.com/fx_marquis?lang=fr" class="navbar-toggler-icon"><img src="img/Twitter_1_.svg" alt=""></a></div>
 
                     </div>
@@ -53,7 +53,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-12">
                         <h1>François-Xavier Marquis</h1>
-                        <h2>" Il n’y a de bonnes technologies que celles au service des êtres humains "</h2>
+                        <h2 class="citation">" Il n’y a de bonnes technologies que celles au service des êtres humains "</h2>
                         <a href="listeblog.html" class="btn-hero">Visiter le blog</a>
                     </div>
                 </div>
@@ -61,7 +61,7 @@
         </div>
     </section>
 
-    <h3 id="about"><img width="4" height="61" src="img/ligneverte.svg" alt=""> À propos <img width="4" height="61" src="img/ligneverte.svg" alt=""> </h3>
+    <h3 id="about" class="move"> <span>À propos </span></h3>
     <section class="main-about">
 
         <div class="container">
@@ -80,7 +80,7 @@
             </div>
         </div>
     </section>
-    <h3 id="prestations"> <img width="4" height="61" src="img/ligneverte.svg" alt=""> Prestations <img width="4" height="61" src="img/ligneverte.svg" alt=""> </h3>
+    <h3 class="move" id="prestations"><span>Prestations</span></h3>
     <article class="main-prestations">
         <div class="container">
             <div class="row">
@@ -101,18 +101,18 @@
                 <div class="col-lg-12">
                     <h2 class="grand">Les prestations peuvent être réalisées en deux phases:</h2>
                 </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 col-lg-6">
-                            <h2>Diagnostic et conseil</h2>
-                            <img class="conseil" width="260" src="img/conseil.svg" alt="">
-                        </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-6">
+                    <h2>Diagnostic et conseil</h2>
+                    <img class="conseil" width="260" src="img/conseil.svg" alt="">
+                </div>
 
-                        <div class="col-md-6 col-lg-6">
-                            <h2>Accompagnement</h2>
-                            <img class="accompagnement" width="260" src="img/accompagnement.svg" alt="">
-                        </div>
-                    </div>
+                <div class="col-md-6 col-lg-6">
+                    <h2>Accompagnement</h2>
+                    <img class="accompagnement" width="260" src="img/accompagnement.svg" alt="">
                 </div>
             </div>
         </div>
@@ -163,15 +163,17 @@
     </div>
 
     <section>
-        <h3 id="livre">  Son livre <img width="4" height="61" src="img/ligneverte.svg" alt=""> </h3>
+        <h3 id="livre" class="move">
+            <pan> Son livre </pan>
+        </h3>
 
         <div class="livre">
 
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12 col-livret">
                         <img class="livret" src="img/livret.png" alt="">
-                       
+
 
                     </div>
                 </div>
@@ -202,11 +204,12 @@
 
         <h3> <img width="4" height="61" src="img/ligneverte.svg" alt=""> vidéo <img width="4" height="61" src="img/ligneverte.svg" alt=""> </h3>
 
-
-        <div class="row">
-            <div class="col-12">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/SEoTwMi-DTw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/SEoTwMi-DTw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
         </div>
@@ -216,22 +219,17 @@
 
     </section>
 
-    <h3 id="contact"> <img width="4" height="61" src="img/ligneverte.svg" alt=""> contact <img width="4" height="61" src="img/ligneverte.svg" alt=""></h3>
+    <h3 id="contact" class="move"> <span> contact </span> </h3>
     <section class="contact">
 
 
         <div class="formulaire">
 
             <form>
-
-                <div class="row">
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Prénom">
-                    </div>
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Nom">
-                    </div>
-                </div>
+               
+                        
+                            <input type="text" class="form-control" placeholder="Nom - prénom">
+            
 
                 <div class="form-group">
                     <label for="exampleInputEmail1"></label>
@@ -258,19 +256,19 @@
                 <div class="row">
                     <div class="col-12 text-center">
                         <a href="mentions.html" class="text-white">  Mentions légales </a><br>
-                        <address><a href="mailto:fxmarquis@wanadoo.fr" class="text-white">  fxmarquis@wanadoo.fr </a></address> 
+                        <address><a href="mailto:fxmarquis@wanadoo.fr" class="text-white">  fxmarquis@wanadoo.fr </a></address>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <a class="text-white"><a href="#about">À propos </a><a href="#prestations">Prestations </a><a href="#livre">Livre</a> <a href="#video"> Vidéo </a> <a href="#Contact">Contact</a> </a>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12 text-center">
-                    <a class="text-white"><a href="#about">À propos </a><a href="#prestations">Prestations </a><a href="#livre">Livre</a> <a href="#video"> Vidéo </a> <a href="#Contact">Contact</a> </a>
-                </div>
-            </div>
+
         </footer>
 
     </section>
-
 
 
     <script type="application/javascript" src="js/jquery-3.2.1.min.js"></script>

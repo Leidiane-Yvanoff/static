@@ -66,18 +66,19 @@ body {
 }
 */
 
-.social {
+.nav-link {
 
     display: block;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-flow: nowrap;
-    margin: auto;
+    
+    
 }
 
 nav {
     background: #008D9E;
     width: 100%;
-    text-align: center;
+    text-align: left;
     display: block;
     margin: 0 auto;
     flex-flow: nowrap;
@@ -85,9 +86,9 @@ nav {
 
 nav li {
     display: block;
-    justify-content: center;
+    justify-content: flex-start;
 
-    margin: 0 auto;
+  
 
 }
 
@@ -189,7 +190,7 @@ nav li a:hover {
     text-align: center;
     color: #fff;
     text-decoration: none;
-    background: #036874;
+    background: #008D9E;
 }
 
 .menuicon {
@@ -200,7 +201,7 @@ nav li a:hover {
 .menuicon:hover {
 
     text-decoration: none;
-    opacity: 0.5;
+    opacity: 0.7;
 
 }
 
@@ -212,36 +213,47 @@ h1 {
     text-align: center;
     text-shadow: 1px 1px 2px #454242;
     font-weight: 400;
+    padding-top: 100px;
+    line-height: 1;
 }
 
 h2 {
 
     color: white;
     font-family: 'Montserrat', sans-serif;
-    font-size: 4vh;
+    font-size: 18px;;
     text-align: center;
     text-shadow: 1px 1px 2px rgba(69, 66, 66, 0.1);
     padding-bottom: 20px;
     padding-top: 8Opx;
     font-weight: 400;
 }
+.citation
+{
+    padding-top: 90px;
+}
 
 .grand {
-    font-size: 6vh;
+    font-size: 18px;
     color: white;
     text-shadow: none;
 }
 
 .btn-hero {
 
-    display: inline-block;
-    padding: 10px 15px;
+     display: inline-block;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 25px;
     background-color: #008D9E;
-    color: #fff;
+    color: white;
     font-size: 16px;
     border: solid 1px #008D9E;
     border-radius: 120px;
-    box-shadow: 1px 1px 0px grey;
+    box-shadow: 1px 1px 2px grey;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
 
 
 }
@@ -249,18 +261,22 @@ h2 {
 .btn-hero a {
     color: white;
     transition: .3s;
+     text-decoration: none;
 }
 
 .btn-hero:hover {
 
     text-decoration: none;
     color: white;
-    transform: scale(1.2);
+    transform: scale(1.1);
+    background-color: #008D9E;
 }
+
+
 
 h3 {
     text-transform: uppercase;
-    font-size: 5vh;
+    font-size: 26px;
     color: black;
     margin-top: 90px;
     margin-bottom: 40px;
@@ -285,16 +301,16 @@ h3 {
 p {
 
     text-align: center;
-    padding-top: 20px;
+    padding-top: 18px;
     padding-bottom: 0;
     font-size: 16px;
 
 }
 
 .large {
-    line-height: 0;
-    padding-top: 40px;
-    font-size: 18px;
+    line-height: 1;
+    padding-top: 20px;
+    font-size: 16px;
 }
 
 p #first {
@@ -399,6 +415,7 @@ h4 {
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
+  
 
 }
 
@@ -415,28 +432,27 @@ h4 {
 .livre {
 
 
-    margin: 0 auto;
     background-image: url(../img/fxvert.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     background-attachment: fixed;
-    max-width: 760px;
-    height: 500px;
 
+}
 
+.livre .col-livret {
+    position: relative;
+    height: 100vw;
+    max-height: 600px;
 }
 
 .livret {
 
-
-    padding-top:280px;
-    padding-left: 180px;
-    padding-right: 60px;
-
-    max-width: 440px;
-    position: relative;
-    z-index: 99;
-
+    position: absolute;
+    bottom: 0;
+    left: 55%;
+    max-width: 45%;
+    transform: translateY(33.3333%);
 }
 
 .logoediteur {
@@ -537,7 +553,7 @@ footer a:hover {
    
     padding: 40px 40px;
     background-color: #f5f2ec;
-    padding: 20px;
+   
 
 }
 
@@ -719,6 +735,49 @@ footer a:hover {
         width: 20%;
     }
 
+}
+
+.line-move    
+{
+ 
+    width: 3px;
+    border: solid 0 3px #008D9E;
+    
+}
+
+#prestations span{
+    display: inline-block;
+    position: relative;
+    max-width: 0;
+    padding: 0 20px;
+    transition: .3s;
+    color: rgba(0,0,0,0);
+}
+
+
+#prestations:hover span{
+    max-width: 50%;
+    color: #000;
+}
+
+#prestations span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 3px;
+    height: 100%;
+    background-color: #008D9E;
+}
+
+#prestations span::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -20px;
+    width: 3px;
+    height: 100%;
+    background-color: #008D9E;
 }
 
 #Blog
