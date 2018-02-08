@@ -80,6 +80,7 @@ nav {
     text-align: center;
     display: block;
     margin: 0 auto;
+    flex-flow: nowrap;
 }
 
 nav li {
@@ -217,7 +218,7 @@ h2 {
 
     color: white;
     font-family: 'Montserrat', sans-serif;
-    font-size: 3vh;
+    font-size: 4vh;
     text-align: center;
     text-shadow: 1px 1px 2px rgba(69, 66, 66, 0.1);
     padding-bottom: 20px;
@@ -231,25 +232,30 @@ h2 {
     text-shadow: none;
 }
 
-.voir {
+.btn-hero {
 
     display: inline-block;
     padding: 10px 15px;
     background-color: #008D9E;
     color: #fff;
-    font-size: 18px;
-    border: solid 2px #008D9E;
+    font-size: 16px;
+    border: solid 1px #008D9E;
     border-radius: 120px;
-    box-shadow: 2px 2px 2px grey;
-    transition: .3s;
+    box-shadow: 1px 1px 0px grey;
+
 
 }
 
-.voir:hover {
-    transform: scale(1.2);
-    color: #008D9E;
-    background-color: white;
+.btn-hero a {
+    color: white;
+    transition: .3s;
+}
 
+.btn-hero:hover {
+
+    text-decoration: none;
+    color: white;
+    transform: scale(1.2);
 }
 
 h3 {
@@ -267,7 +273,7 @@ h3 {
 
     width: 100%;
     height: auto;
-    margin: 0;
+    margin: 0 auto;
 
 
 }
@@ -280,7 +286,15 @@ p {
 
     text-align: center;
     padding-top: 20px;
+    padding-bottom: 0;
+    font-size: 16px;
 
+}
+
+.large {
+    line-height: 0;
+    padding-top: 40px;
+    font-size: 18px;
 }
 
 p #first {
@@ -295,22 +309,23 @@ p #first {
     padding: 10px 25px;
     background-color: #008D9E;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     border: solid 2px #008D9E;
     border-radius: 120px;
     box-shadow: 1px 1px 2px grey;
     margin: auto;
     margin-top: 40px;
     margin-bottom: 40px;
-    transition: .3s;
+
 }
 
 .btn a {
     color: white;
     transition: .3s;
+    text-decoration: none;
 }
 
-.btn a:hover {
+.btn:hover {
     text-decoration: none;
     color: white;
     transform: scale(1.2);
@@ -373,10 +388,9 @@ h4 {
 }
 
 .calendrier {
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    margin-top: 20px;
+    display: block;
+    margin: 20px auto;
+    max-width: 320px;
 
 }
 
@@ -389,7 +403,8 @@ h4 {
 }
 
 .fx img {
-    margin: 0 auto;
+    display: flex;
+   justify-content: center;
 
 }
 
@@ -399,21 +414,28 @@ h4 {
 
 .livre {
 
-    max-width: 840px;
-    position: relative;
+
     margin: 0 auto;
+    background-image: url(../img/fxvert.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    max-width: 760px;
+    height: 500px;
+
+
 }
 
 .livret {
 
-    object-position: right;
-    position: absolute;
-    margin: 0 auto;
-    top: 30%;
-    padding-left: 40vw;
-    padding-right: 2vw;
-    z-index: 88;
 
+    padding-top:280px;
+    padding-left: 180px;
+    padding-right: 60px;
+
+    max-width: 440px;
+    position: relative;
+    z-index: 99;
 
 }
 
@@ -421,6 +443,7 @@ h4 {
 
     margin: auto;
     margin-top: 30px;
+    max-width: 700px;
 
 }
 
@@ -474,7 +497,9 @@ h4 {
 
 footer a {
     color: white;
-
+    background-color: #008D9E;
+    width: 100%;
+    margin: auto;
 
 }
 
@@ -484,9 +509,13 @@ footer a:hover {
 }
 
 .foot {
-    padding-bottom: 40px;
+   
     line-height: 2;
-
+    background-color: #008D9E;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .btn-primary {
@@ -505,9 +534,10 @@ footer a:hover {
 }
 
 .formulaire {
-    margin: 10px 0px;
-    padding: 40px 20px;
-    background-color: #008D9E;
+   
+    padding: 40px 40px;
+    background-color: #f5f2ec;
+    padding: 20px;
 
 }
 
@@ -624,14 +654,14 @@ footer a:hover {
     border: none;
     outline: none;
 
-    color: #054b53;
+    color: white;
     cursor: pointer;
     padding: 0;
     border-radius: 80px;
 }
 
 #mytop:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.54);
 }
 
 .mentions {
@@ -668,11 +698,11 @@ footer a:hover {
         margin-left: 0%;
         width: 20%;
     }
-    
+
 }
-.ligne2
-{
-        position: relative;
+
+.ligne2 {
+    position: relative;
     animation-duration: 1s;
     animation-name: slidein;
     animation-iteration-count: 1;
@@ -688,10 +718,8 @@ footer a:hover {
         margin-right: 0%;
         width: 20%;
     }
-    
+
 }
-#Blog 
 
-
-
+#Blog
 /*smart slider*/
