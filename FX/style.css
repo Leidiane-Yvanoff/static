@@ -2,7 +2,7 @@
 Theme Name: fxmarquis
 Theme URI: http://underscores.me/
 Author: Ly design
-Author URI: http://Ly Design/
+Author URI: http://lydesign.fr/
 Description: Description
 Version: 1.0.0
 License: GNU General Public License v2 or later
@@ -61,36 +61,42 @@ body {
 .nav-link {
 
     display: block;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -ms-flex-flow: nowrap;
     flex-flow: nowrap;
-
-
+    z-index: 65;
+    margin: 0 ;
 }
 
 nav {
     background: #008D9E;
     width: 100%;
-    text-align: left;
-    display: block;
-    margin: 0 auto;
+    text-align: center;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    margin: 0;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-around;
     -ms-flex-flow: nowrap;
     flex-flow: nowrap;
-    z-index: 9999;
     -webkit-box-shadow: 3px 1px 5px rgba(128, 128, 128, 0.48);
     box-shadow: 3px 1px 5px rgba(128, 128, 128, 0.48);
+    padding-top: 10px;
 
 }
 
 nav li {
-    display: block;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-
-
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: inline-block;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    
 }
 
 nav li a {
@@ -107,7 +113,7 @@ nav li a {
     text-transform: uppercase;
     -webkit-transition: .5s;
     transition: .5s;
-    margin: 0 auto;
+    margin: 0 ;
 }
 
 nav li a:hover {
@@ -124,13 +130,7 @@ nav li a:hover {
     background-size: cover;
     z-index: -1;
     max-width: 100%;
-    margin: 0 auto;
-}
-
-@media (max-width: 769px) {
-    .hero {
-        background-attachment:none;
-    }
+    margin: 0;
 }
 
 .hero .row {
@@ -150,20 +150,18 @@ nav li a:hover {
     -webkit-box-pack: center center;
     -ms-flex-pack: center center;
     justify-content: center center;
-
-    text-decoration: none;
 }
 
 .hero .container a:hover {
     text-align: center;
     color: #fff;
-    text-decoration: none;
     background: #008D9E;
 }
 
 .menuicon {
 
     height: 16px;
+    padding-top: 20px;
 }
 
 h1 {
@@ -210,8 +208,8 @@ h2,
     text-shadow: none;
 }
 
-.btn-hero {
 
+.btn-hero {
     display: inline-block;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -221,31 +219,29 @@ h2,
     background-color: #008D9E;
     color: white;
     font-size: 16px;
-    border: solid 1px #008D9E;
+    border: solid 2px #008D9E;
     border-radius: 120px;
     -webkit-box-shadow: 1px 1px 2px grey;
     box-shadow: 1px 1px 2px grey;
-    margin: auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+     
 }
 
 .btn-hero a {
     color: white;
     -webkit-transition: .3s;
     transition: .3s;
-    text-decoration: none;
+   
 }
 
 .btn-hero:hover {
 
-    text-decoration: none;
     color: white;
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-    background-color: #008D9E;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    text-decoration: none;
 }
-
 
 
 h3 {
@@ -333,7 +329,7 @@ p #first {
 }
 
 .btn {
-    display: block;
+    display: inline-block;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -346,7 +342,7 @@ p #first {
     border-radius: 120px;
     -webkit-box-shadow: 1px 1px 2px grey;
     box-shadow: 1px 1px 2px grey;
-    margin: auto;
+  
     margin-top: 20px;
     margin-bottom: 20px;
 
@@ -357,7 +353,7 @@ p #first {
     color: white;
     -webkit-transition: .3s;
     transition: .3s;
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .btn:hover {
@@ -546,7 +542,7 @@ figcaption {
 
 .contact {
     background-color: #008D9E;
-    height: auto;
+    
 
 }
 
@@ -627,10 +623,11 @@ footer a:hover {
 
 .formulaire {
 
-    padding: 40px 40px;
+  
     background-color: #d9e9eb;
-
-
+    text-align: left;
+    margin: 0 auto;
+  
 }
 
 .embed-responsive {
@@ -804,58 +801,7 @@ footer a:hover {
 
 }
 
-.nb {
-    border: 3ps solid black;
-
-}
-
-/*smart slider*/
-
-/*smart slider*/
-
-/*
-.line-move    
-{
- 
-    width: 3px;
-    border: solid 0 3px #008D9E;
-    
-}
-
-#prestations span{
-    display: inline-block;
-    position: relative;
-    max-width: 0;
-    padding: 0 20px;
-    transition: .3s;
-    color: rgba(0,0,0,0);
-}
 
 
-#prestations:hover span{
-    max-width: 50%;
-    color: #000;
-}
 
-#prestations span::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -20px;
-    width: 3px;
-    height: 100%;
-    background-color: #008D9E;
-}
 
-#prestations span::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: -20px;
-    width: 3px;
-    height: 100%;
-    background-color: #008D9E;
-}
-
-#Blog
-/*smart slider*/

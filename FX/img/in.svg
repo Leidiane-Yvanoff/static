@@ -1,0 +1,20 @@
+<svg id="Groupe_1327" data-name="Groupe 1327" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 90">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #008d9e;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-size: 20px;
+        font-family: Montserrat-Bold, Montserrat;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <g id="Header_light_centered_logo" data-name="Header light centered logo" transform="translate(0 -50)">
+    <rect id="BG" class="cls-1" width="1920" height="90" transform="translate(0 50)"/>
+    <text id="À_PROPOS_PRESTATIONS_LIVRE_VIDÉO_CONTACT_" data-name="À PROPOS          PRESTATIONS          LIVRE          VIDÉO          CONTACT " class="cls-2" transform="translate(320 102)"><tspan x="0" y="0" xml:space="preserve">À PROPOS          PRESTATIONS          LIVRE          VIDÉO          CONTACT </tspan></text>
+  </g>
+</svg>

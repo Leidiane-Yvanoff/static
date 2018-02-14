@@ -1,61 +1,30 @@
-<html lang="fr">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>François-Xavier Marquis</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,800,900" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
-
-    <a href="https://icons8.com"></a>
-    <?php wp_head();?>
-</head>
-
-<body>
-    <button onclick="topFunction()" id="mytop" title="Go to top"><img width="50" src="img/top.svg" alt="gototop"></button>
-
-    <header>
-
-        <nav class="navbar fixed-top navbar-expand-md col-md-12">
-            <div class="container">
-
-                <div class="navbar-header">
-
-                    <a href="#" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#menu"><img src="img/iconmenu.svg" class="menuicon" width="30"  alt="menuicon"></a>
-                </div>
-
-                <div class="collapse navbar-collapse" id="menu">
-                    <ul class="nav navbar-nav">
-                        <li><a href="#about">à propos</a></li>
-                        <li><a href="#prestations">prestations</a></li>
-                        <li><a href="#livre">livre</a></li>
-                        <li><a href="#video">vidéo</a></li>
-                        <li><a href="#contact">contact</a></li>
-                    </ul>
-
-                    <div class="nav-link navbar">
-
-                        <div><a href="https://medium.com/@fxmarquis" width="30" class="navbar-toggler-icon"><img src="img/medium.svg" alt=""></a></div>&nbsp;&nbsp;&nbsp;
-                        <div><a href="https://www.linkedin.com/in/fxmarquis/" class="navbar-toggler-icon"><img src="img/linked.svg" alt=""></a></div>&nbsp;&nbsp;&nbsp;
-                        <div> <a href="https://twitter.com/fx_marquis?lang=fr" class="navbar-toggler-icon"><img src="img/Twitter_1_.svg" alt=""></a></div>
-
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <section>
-        <div class="hero">
+<?php
+/**
+ * The main template file
+ *
+ * This is the most generic template file in a WordPress theme
+ * and one of the two required files for a theme (the other being style.css).
+ * It is used to display a page when nothing more specific matches a query.
+ * E.g., it puts together the home page when no home.php file exists.
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ *
+ * @package FX_Marquis */
+ 
+wp_head(); 
+get_header();
+ 
+   ?>
+    
+     
+<section>
+        <div class="hero" style="background-image: url(<?php bloginfo('template_url'); ?>/img/nomade.jpg);">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-12 fadeInDown">
                         <h1>François-Xavier Marquis</h1>
                         <h2 class="citation">" Il n’y a de bonnes technologies que celles au service des êtres humains "</h2>
-                        <a href="listeblog.html" class="btn-hero">Visiter le blog</a>
+                        <div><a href="http://fxmarquis.local/blog" class="btn-hero">Visiter le blog</a></div>
                     </div>
                 </div>
             </div>
@@ -63,7 +32,6 @@
     </section>
     <h3 id="about"><span class="ligneverte"></span>&nbsp; à propos &nbsp;<span class="ligneverte"></span></h3>
     <section class="main-about">
-
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -72,10 +40,10 @@
                            <span id="first"> I</span>l est Docteur diplômé des Mines de Paris (Projet et Produits Nouveaux), Mastère de Gestion Industrielle (Agro ParisTech), DEA Génie des procédés Paris X et Ingénieur ENSIA.</p>
                 </div>
                 <div class="col-lg-6">
-                    <img class="img-responsive ecole" src="img/488742478.jpg" alt="">
+                    <img class="img-responsive ecole" src="<?php bloginfo('template_url'); ?>/img/488742478.jpg" alt="">
+                  
                 </div>
-
-                <div class="btn"><a href="#contact">En savoir plus</a></div>
+                   <div><a href="#contact" class="btn">En savoir plus</a></div>
             </div>
         </div>
     </section>
@@ -85,7 +53,7 @@
             <div class="row">
                 <div class="col-lg-12">
 
-                    <img class="img-responsive" src="img/conference.jpg" alt="photoconference">
+                    <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/img/conference.jpg" alt="photoconference">
 
                     <h4>Conférences , Formations ,<br> Conseils , Débats et <br> Sensibilisations
                     </h4>
@@ -106,12 +74,12 @@
             <div class="row">
                 <div class="col-md-6 col-lg-6 ">
                     <h2>Diagnostic et Conseil</h2>
-                    <img class="conseil " width="180" src="img/conseil.svg" alt="">
+                    <img class="conseil " width="180" src="<?php bloginfo('template_url'); ?>/img/conseil.svg" alt="">
                 </div>
 
                 <div class="col-md-6 col-lg-6">
                     <h2>Accompagnement</h2>
-                    <img class="accompagnement" width="180" src="img/accompagnement.svg" alt="">
+                    <img class="accompagnement" width="180" src="<?php bloginfo('template_url'); ?>/img/accompagnement.svg" alt="">
                 </div>
             </div>
         </div>
@@ -129,31 +97,31 @@
     <div class="calendrier">
         <div class="container">
             <div class="slider">
-                <div class="slide" style="background-image: url(img/slide2.jpg);">
+                <div class="slide" style="background-image: url(<?php bloginfo('template_url'); ?>/img/slide2.jpg);">
                     <div class="date-calendar">
                         <p>2 février 2018 :<br> Université d'Hiver de la Formation <br> Professionnelle, Biarritz</p>
                     </div>
                 </div>
-                <div class="slide" style="background-image: url(img/slide3.jpg);">
+                <div class="slide" style="background-image: url(<?php bloginfo('template_url'); ?>/img/slide3.jpg);">
 
                     <div class="date-calendar">
                         <p>6 février 2018 :<br> ESTIA Biarritz
                         </p>
                     </div>
                 </div>
-                <div class="slide" style="background-image: url(img/slide4.jpg);">
+                <div class="slide" style="background-image: url(<?php bloginfo('template_url'); ?>/img/slide4.jpg);">
                     <div class="date-calendar">
                         <p>22 février 2018 :<br> Cadres en Mission Nantes
                         </p>
                     </div>
                 </div>
-                <div class="slide" style="background-image: url(img/slide5.jpg);">
+                <div class="slide" style="background-image: url(<?php bloginfo('template_url'); ?>/img/slide5.jpg);">
                     <div class="date-calendar">
                         <p>15 Mars 2018 :<br> à l’Insula Café sur l’île de Nantes
                         </p>
                     </div>
                 </div>
-                <div class="slide" style="background-image: url(img/slide6.jpg);">
+                <div class="slide" style="background-image: url(<?php bloginfo('template_url'); ?>/img/slide6.jpg);">
                     <div class="date-calendar">
                         <p>21 Mars 2018 : <br>à l'université du Havre
                         </p>
@@ -162,6 +130,7 @@
             </div>
         </div>
     </div>
+    
 
     <div class="container">
         <div class="row">
@@ -174,7 +143,7 @@
         <div class="container">
             <div class="row d-flex-space-around">
                 <div class="col-md-4 col-lg-4">
-                    <img class="img-responsive nb" src="img/fx-marquisNB.jpg" alt="">
+                    <img class="img-responsive nb" src="<?php bloginfo('template_url'); ?>/img/fx-marquisNB.jpg" alt="">
                 </div>
                 <div class="col-md-8 col-lg-8">
                     <p class="fx-text text-justify"> J’ai toujours eu à cœur de m’attacher à la convergence entre les technologies et les êtres humains, de tous les métiers que j’ai pu faire, j’ai retenu deux lignes directrices: <br> - Il n’y a de bonnes technologies que celles au service des êtres humains<br> - Une innovation ne prend son sens qu’à travers de ses usages. " ( François-Xavier Marquis )</p>
@@ -190,17 +159,17 @@
     <section>
         <h3 id="livre"><span class="ligneverte"></span>&nbsp; Son livre &nbsp;<span class="ligneverte"></span></h3>
 
-        <div class="livre">
+        <div class="livre" style="background-image: url(<?php bloginfo('template_url'); ?>/img/livre.jpg);">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-livret">
-                        <img class="livret" src="img/livret.png" alt="">
+                        <img class="livret" src="<?php bloginfo('template_url'); ?>/img/livret.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
         <div class="logoediteur">
-            <img class="img-responsive " src="img/lharmattan.png" alt="">
+            <img class="img-responsive " src="<?php bloginfo('template_url'); ?>/img/lharmattan.png" alt="">
         </div>
 
         <div class="container">
@@ -227,7 +196,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/SEoTwMi-DTw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                       <iframe width="560" height="315" src="https://www.youtube.com/embed/SEoTwMi-DTw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -239,72 +208,29 @@
     </section>
 
     <h3 id="contact"><span class="ligneverte"></span>&nbsp; Contact &nbsp;<span class="ligneverte"></span></h3>
-    <section class="contact">
-        <div class="formulaire">
-            <form>
-                <input type="text" class="form-control" placeholder="Nom - prénom">
-                <div class="form-group">
-                    <label for="exampleInputEmail1"></label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="E-mail">
-                </div>
-                <div>
-                    <div class="form-group">
-                        <label for="exampleFormControlTextarea1"></label>
-                        <textarea class="form-control" placeholder="Message" id="exampleFormControlTextarea1" rows="12"></textarea>
-                    </div>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
-        Je ne suis pas un robot !     <img src="img/recaptcha.jpg" width="40" heigth="40" alt="">
-      </label>
-                </div>
-                <button type="submit" class="btn btn-primary">Envoyer</button>
-            </form>
-        </div>
-        <footer class="foot">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <a href="mentions.html" class="text-white">  Mentions légales </a><br>
-                        <address><a href="mailto:fxmarquis@wanadoo.fr" class="text-white">  fxmarquis@wanadoo.fr </a></address>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <div class="text-white"><a href="#about">À propos </a><a href="#prestations">Prestations </a><a href="#livre">Livre</a> <a href="#video"> Vidéo </a> <a href="#contact">Contact</a></div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </section>
-    <script type="application/javascript" src="js/jquery-3.2.1.min.js"></script>
-    <script type="application/javascript" src="js/bootstrap.min.js"></script>
-    <script type="application/javascript" src="js/bootstrap.js"></script>
-    <script>
-        window.onscroll = function() {
-            scrollFunction()
-        };
+ 
+       <div class="container">
+        <div class="formulaire
+              ">
+              <div class="formulaire">
+            
+                 <?php echo do_shortcode('[contact-form-7 id="65"  class="formulaire" title="Contact"]'); ?> 
+                  <button type="submit" class="btn ">Envoyer</button>
+                 <!-- <div class="g-recaptcha" data-sitekey="6Le6KkYUAAAAAJvyTrjziZ6yVRJ7oWzJOhG7br9s"></div>
+                -->
+          </div>
+       </div>
+           <section class="contact">
+</section>
+    <?php get_footer();
+        ?>
 
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                document.getElementById("mytop").style.display = "block";
-            } else {
-                document.getElementById("mytop").style.display = "none";
-            }
-        }
+    
 
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
+        
 
-    </script>
-    <script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script type="text/javascript" src="js/my-script.js"></script>
-</body>
 
-</html>
+
+
+
+
